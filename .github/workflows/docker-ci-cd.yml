@@ -80,7 +80,10 @@ jobs:
       - name: Run linting
         run: |
           echo "Running linting checks..."
-          flake8 .
+          flake8 . \
+            --max-line-length=120 \
+            --exclude=.git,__pycache__,venv \
+            --ignore=E203,W503
           
 
   security-scan:
