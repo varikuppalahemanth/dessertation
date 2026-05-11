@@ -121,6 +121,7 @@ plt.title("Top 10 Most Frequent Tokens")
 plt.xticks(rotation=45)
 plt.show()
 
+
 import seaborn as sns
 
 sns.boxplot(x='vulnerability_type', y='code_length', data=df)
